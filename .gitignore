@@ -17,6 +17,7 @@ __pycache__/
 # 课程材料（版权，不公开）
 learning_materials/
 project_proposal/
+progress_report/
 
 # 自用 / 含中文文档（不展示，仅供我们自己）
 report_notes.md
