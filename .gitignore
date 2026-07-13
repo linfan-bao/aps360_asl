@@ -1,0 +1,27 @@
+# 数据（大文件，不进 git）
+data/asl_alphabet_train/
+data/asl_alphabet_test/
+data/selfcollected/
+*.zip
+
+# 模型权重
+models/*.pth
+models/*.pt
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# 课程材料（版权，不公开）
+learning_materials/
+project_proposal/
+
+# 自用 / 含中文文档（不展示，仅供我们自己）
+report_notes.md
+experiments_log.md
+report_draft.md
+
+# 本地编辑器配置
+.vscode/

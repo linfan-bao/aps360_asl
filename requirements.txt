@@ -1,0 +1,11 @@
+# APS360 ASL 项目依赖（环境：conda pro_310, Python 3.10）
+# 核心（已在 pro_310 中，无需重装，仅作记录）
+torch==2.5.1
+torchvision
+numpy
+
+# 需要补装的小包
+scikit-learn      # 混淆矩阵、指标
+matplotlib        # 学习曲线、柱状图
+pillow            # 图像读取
+tqdm              # 训练进度条
