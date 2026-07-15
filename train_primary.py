@@ -12,7 +12,7 @@ from utils.data import (get_loaders, CLASSES, ASLDataset, val_tf,
 from utils.engine import train, get_accuracy, plot_curves, plot_confusion
 
 ROOT = Path(__file__).resolve().parent
-TAG = "primary_ep8_do0.2"   # bump this each experiment so figures/weights aren't overwritten
+TAG = "primary_ep20"   # bump this each experiment so figures/weights aren't overwritten
 
 
 class ASLNet(nn.Module):
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"total params: {total:,}  trainable: {trainable:,}")
 
-    hist = train(model, train_loader, val_loader, device, epochs=8, lr=0.01)
+    hist = train(model, train_loader, val_loader, device, epochs=20, lr=0.01)
     print("final val accuracy:", hist["val_acc"][-1])
 
     torch.save(model.state_dict(), ROOT / "models" / f"{TAG}.pth")
